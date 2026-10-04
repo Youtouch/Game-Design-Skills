@@ -11,6 +11,6 @@ Assume `x(L) = 100·L^1.8` and `xp_rate(L) = 40 + 6·L` XP/min.
 | 3 | 723 | 58 | 12.5 | 21 min |
 | 4 | 1,213 | 64 | 19.0 | 40 min |
 | 10 | 6,310 | 100 | 63 | ~5.5 h |
-| 29 | 42,600 | 214 | 199 | ~20 h |
+| 29 | 42,900 | 214 | 199 | ~20 h |
 
-Verdict: level 5 lands at ~70 min, missing the 30-min target. Fix with a piecewise tutorial band: `x(L) = 150·L` for L ≤ 5 (cumulative ~15 min), keep the polynomial after. Re-check that hour 20 still holds (shift ~-0.8 h, acceptable).
+Verdict: level 5 lands at ~40 min, missing the 30-min target. Fix with a piecewise tutorial band: `x(L) = 100·L` for L ≤ 4 (1,000 XP, cumulative ~18 min), keep the polynomial after. Re-check that hour 20 still holds (shift ~-0.8 h, acceptable).
