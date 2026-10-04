@@ -1,0 +1,50 @@
+---
+name: progression-curve
+description: Design XP, level and power curves and compute time-to-level, time-to-cap and pacing checkpoints with explicit formulas. Use when tuning leveling speed, power growth, difficulty scaling, unlock pacing or when a game feels grindy or too fast.
+---
+
+# Progression Curve
+
+Design-level curve work. Output: chosen formulas, a level table, time-to-X numbers and pacing checkpoints. No engine code.
+
+## Inputs (assume and state if missing)
+
+- Level cap, target time-to-cap (hours of play) and target first-session milestones.
+- XP income model: XP/min by activity, and how it scales with level.
+- Power axes: player stats, enemy stats, gear tiers.
+
+## Curve shapes
+
+| shape | XP to next level `x(L)` | feel |
+|---|---|---|
+| Linear | `a + b·L` | steady, predictable; late levels feel cheap |
+| Polynomial | `a·L^k` (k 1.5–2.5) | common RPG default; gentle start, firm end |
+| Exponential | `a·r^L` (r 1.05–1.2) | strong late wall; needs income to scale too |
+| Piecewise | different formula per band | tutorial fast, mid steady, endgame slow |
+
+Cumulative XP `X(L) = Σ x(i)` for i < L. Polynomial approximation: `X(L) ≈ a·L^(k+1)/(k+1)`.
+
+## Procedure
+
+1. **Fix the targets first**, not the formula: e.g. level 5 in session 1 (30 min), level 20 by hour 10, cap 50 by hour 60.
+2. **Model income.** `xp_rate(L)` per minute. If income grows with level, the felt curve is `t(L) = x(L) / xp_rate(L)` — that is the curve to tune, not raw XP.
+3. **Solve parameters** so cumulative time hits each target. Use piecewise bands when one formula cannot hit all checkpoints.
+4. **Level table.** Columns: `L | x(L) | X(L) | xp_rate | minutes for this level | cumulative hours | unlock`.
+5. **Pacing checkpoints.** Place an unlock, new mechanic or reward every ~15–30 min early and every 1–2 h mid-game. Flag dead zones: stretches longer than 2x the median gap with no unlock.
+6. **Power vs challenge.** Plot player power `P(L)` against enemy/content difficulty `D(L)`. Ratio `P/D` near 1 = flow; drifting above means content goes trivial, below means walls. Name deliberate spikes (boss gates) vs accidental ones.
+7. **Catch-up and outliers.** Check a player who skips side content (lower income) and a power gamer (high income). Report time-to-cap spread.
+
+A worked example lives in [example.md](example.md).
+
+## Pitfalls
+
+- Tuning raw XP while income also scales: the felt curve can end up flat or inverted.
+- Exponential power growth with linear content makes all old content trivial; decide if that is intended.
+- Session-1 pacing matters most for retention; check minutes-to-first-3-levels explicitly.
+- Rounding XP thresholds to "nice" numbers shifts cumulative time; recompute after rounding.
+
+## Sources (paraphrased, not quoted)
+
+- Ian Schreiber & Brenda Romero, *Game Balance* (2021), chapters on progression and curves.
+- Ernest Adams, *Fundamentals of Game Design*, chapter on progression and balance.
+- Raph Koster, *A Theory of Fun for Game Design*, on mastery pacing and boredom.
