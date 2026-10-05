@@ -1,6 +1,6 @@
 ---
 name: difficulty-matrix
-description: Builds a Rational Game Design difficulty matrix per mechanic (difficulty parameters, ranges, intensity levels, safe combinations) as an engine-agnostic hand-off table. Use when tuning challenge, planning difficulty curves, or handing difficulty targets to level designers or implementers.
+description: Builds a Rational Game Design difficulty matrix per mechanic (difficulty parameters, ranges, provisional intensity levels, interactions) as an engine-agnostic hand-off table. Use when tuning challenge, planning difficulty curves, or handing difficulty targets to level designers or implementers.
 ---
 
 # Difficulty Matrix
@@ -13,23 +13,23 @@ Turn atomic parameters into graded intensity levels so challenge can be dialled 
 
 ## Process
 1. **Identify demands.** Separate perception, inference, choice, execution, and recovery. If the matrix models execution only, say so and keep the other demands visible; a wider timing window does not repair an unreadable cue.
-2. **Set the range** for each: easiest playable value, hardest fair value, unit. Mark values *estimate* until playtested.
+2. **Set provisional ranges** with units, model conditions, and audience. Separate hard rule limits from proposed challenge or fairness targets; mark untested values as estimates.
 3. **Define provisional levels** useful to this audience and decision. Five named bands are an optional convention, not a validated scale. Give each parameter a value per band.
 4. **Model combinations.** Prefer the parameter vector. If a weighted score helps compare drafts, disclose the chosen weights, units, and untested additive assumption; it is not measured perceived difficulty.
 5. **Inspect interactions.** Identify combinations that may amplify demands. Proposed caps are hypotheses until checked; do not assume a score proves safety or that two parameters can never peak together.
-6. **Define the sweet spot** per game phase: target score band for tutorial, mid-game, and late-game content.
+6. **Set demand targets** by phase, audience, and ability stage. Prefer the parameter vector. If score bands are useful, state assumptions and validation status; a band does not establish perceived difficulty or safety.
 7. **Plan validation:** which observations distinguish misunderstanding, execution difficulty, intended challenge, and participation barriers. Record audience, exposure, assists, and build; failure counts alone do not confirm perceived difficulty.
 
 ## Output
 
-| Parameter | Unit | Weight | Trivial | Easy | Medium | Hard | Expert | Notes |
-|---|---|---|---|---|---|---|---|---|
+| Demand / parameter | Unit | Entry condition | Proposed values or bands | Interactions | Evidence / uncertainty |
+|---|---|---|---|---|---|
 
-Then: combination rules (allowed / capped / forbidden), score bands per phase, and playtest targets.
+Then list modeled constraints, intended combinations, and distinguishing observations. Weights and named bands are optional. Separate rule-impossible combinations from untested demanding combinations.
 
 ## Checks
 - Each level differs from the next in a perceptible way.
-- No forbidden combination appears in any sweet-spot band.
+- Check modeled constraints and justify intended demanding combinations; do not infer safety from a summary score.
 - Complexity is tracked separately so new rules are not mistaken for harder execution.
 
 ## Sources (paraphrased, not quoted)

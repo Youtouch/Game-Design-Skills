@@ -15,14 +15,14 @@ Design-level curve work. Output: chosen formulas, a level table, time-to-X numbe
 
 ## Curve shapes
 
-| shape | XP to next level `x(L)` | feel |
+| shape | XP to next level `x(L)` | modeling use |
 |---|---|---|
-| Linear | `a + b·L` | steady, predictable; late levels feel cheap |
-| Polynomial | `a·L^k` (k 1.5–2.5) | common RPG default; gentle start, firm end |
-| Exponential | `a·r^L` (r 1.05–1.2) | strong late wall; needs income to scale too |
-| Piecewise | different formula per band | tutorial fast, mid steady, endgame slow |
+| Linear | `a + b·L` | constant increase in required XP; duration depends on income |
+| Polynomial | `a·L^k` | adjustable growth; k = 1.5–2.5 is an illustrative range, not a default target |
+| Exponential | `a·r^L` | multiplicative growth; r = 1.05–1.2 is illustrative; compare against income growth |
+| Piecewise | different formula per band | can fit distinct milestones; check transition continuity and actual times |
 
-Cumulative XP `X(L) = Σ x(i)` for i < L. Polynomial approximation: `X(L) ≈ a·L^(k+1)/(k+1)`.
+Cumulative XP `X(L) = Σ x(i)` for i < L. A leading integral approximation for a growing power curve is `a·L^(k+1)/(k+1)`; it omits discrete boundary effects. Validate milestones with the full discrete sum and declared level indexing. Felt pacing remains a hypothesis conditional on activity and audience.
 
 ## Procedure
 

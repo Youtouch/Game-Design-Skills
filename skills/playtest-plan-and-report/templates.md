@@ -5,14 +5,14 @@
 ```
 Test name / date / build:
 Goal (pillar or PXG):
-Hypotheses:
+Questions / hypotheses (as appropriate):
   H1:            Support if:            Weaken if:            Rival explanation:
 Section in scope:            Known limitations and impact:
 Testers (profile x count):
 Prior exposure / access needs / accommodations:
 Protocol and rationale: think-aloud | silent/replay | facilitated
 Assistance rule and actual interventions:
-Tasks (goal phrasing):
+Tasks (goals or recorded instructed-play condition):
   T1:
 Observation sheet columns: tester | time/location | behaviour | quote | hypothesis
 Post-session questions (open first, ratings last):

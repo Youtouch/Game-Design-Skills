@@ -11,7 +11,7 @@ Design docs are communication tools, not archives. Write the smallest doc that l
 
 | Doc | Reader / purpose | Length | Must contain |
 |---|---|---|---|
-| One-pager | Pitch, alignment, greenlight | 1 page | Hook, fantasy, pillars (3 max), core loop, audience, references, key risk |
+| One-pager | Pitch, alignment, greenlight | 1 page | Hook, fantasy, pillars (usually 2–3), core loop, audience, references, key risk |
 | Feature spec | Team building one feature | 2-6 pages | Goal tied to a pillar, player experience goal, player-facing flow, rules, states, edge cases, tuning knobs, open questions |
 | System spec | Designers and implementers of an interacting system | As needed | Purpose, inputs/outputs, rules and formulas, parameters with ranges, interactions with other systems, failure modes, telemetry hooks |
 
@@ -19,7 +19,7 @@ If the request is ambiguous, default to the one-pager for new concepts and the f
 
 ## 2. Anchor before writing
 
-1. Confirm or draft **pillars**: 2-4 short, testable statements of what the game must feel like. A pillar that cannot reject a feature is too vague.
+1. Confirm or draft **pillars**: usually 2–3 short statements for a one-pager, more only when useful to its scope; make them testable statements of what the game must feel like. A pillar that cannot reject a feature is too vague.
 2. Write **player experience goals (PXGs)** per feature: "The player should feel X when Y", followed by a proposed mechanism and observations or neutral questions that could support or weaken it. An emotion is not directly established by a behavior count.
 3. Every section of a spec traces back to a pillar or PXG. Flag sections that do not.
 
@@ -27,7 +27,7 @@ If the request is ambiguous, default to the one-pager for new concepts and the f
 
 - Lead with intent (why), then player-facing behaviour (what), then rules (how). Implementation belongs to engineering; stay engine-agnostic.
 - Use tables for rules, states, and parameters; prose only for intent and feel.
-- Name tuning knobs explicitly with starting values and safe ranges.
+- Name tuning knobs explicitly with starting values, units, model domains, and provisional ranges with validation status.
 - Apply Rational Game Design framing where relevant: what the player must **understand** (signs and feedback), what **skills** the feature demands, and how difficulty parameters scale.
 - End with **Open questions** and **Risks**, each with an owner if known.
 

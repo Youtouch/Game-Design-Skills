@@ -10,15 +10,15 @@ A playtest addresses a decision or exploratory question. Use hypotheses when spe
 ## Mode A: Plan
 
 1. **Goal**: one sentence linking the test to a pillar or player experience goal (PXG).
-2. **Hypotheses**: 2-5 falsifiable statements, e.g. "Players find the grapple without a tutorial prompt within 2 minutes."
+2. **Questions**: use a small set of falsifiable hypotheses for competing explanations, or open exploratory questions when the uncertainty is not yet framed. Choose any threshold for the actual decision, not to satisfy a template.
 3. **Build and scope**: which build, which section, known limitations and whether they invalidate the question. Document necessary instructions; asking participants to ignore a problem does not remove its effects.
 4. **Testers**: profile and count; note whether they are new, returning, or genre-experienced. Choose a feasible sample for the question and record coverage limits; no fixed count guarantees the major issues will surface. Include relevant access needs and accommodations.
-5. **Tasks**: what the tester is asked to do, phrased as goals, never as instructions that reveal the solution.
+5. **Tasks**: use goal tasks for unaided discovery. For instructed or facilitated play, supply and record the intended assistance; do not infer unaided discovery from that condition.
 6. **Observation sheet**: for each hypothesis, the observable behaviour and neutral follow-up that could support or weaken it, including rival explanations (hesitation, wrong path, repeated failure, verbal reaction, time to complete).
 7. **Questions**: a short post-session interview. Open questions first ("What were you trying to do there?"), ratings last. Avoid leading questions.
 8. **Protocol**: choose think-aloud for mental-model questions when suitable; consider uninterrupted play and retrospective questions for timing, comedy, or tension. Declare assistance rules, preserve facilitation that belongs to normal play, and record interventions, prior exposure, and accommodations.
 
-Template: [templates.md](templates.md).
+Template: [templates.md](templates.md). For interpreting measured outcomes and randomized comparisons, read [outcome interpretation](outcome-interpretation.md).
 
 ## Mode B: Report
 

@@ -8,10 +8,12 @@ Assume `x(L) = 100·L^1.8` and `xp_rate(L) = 40 + 6·L` XP/min.
 |---|---|---|---|---|
 | 1 | 100 | 46 | 2.2 | 2 min |
 | 2 | 348 | 52 | 6.7 | 9 min |
-| 3 | 723 | 58 | 12.5 | 21 min |
-| 4 | 1,213 | 64 | 19.0 | 40 min |
+| 3 | 722 | 58 | 12.5 | 21 min |
+| 4 | 1,213 | 64 | 18.9 | 40 min |
 | 10 | 6,310 | 100 | 63.1 | 306.4 min / 5.11 h |
 | 29 | 42,886 | 214 | 200.4 | 2,902.6 min / 48.38 h |
+
+Displayed thresholds are rounded to nearest integer; timings use unrounded thresholds. If rounded thresholds become game rules, recompute all times.
 
 Cumulative time in row L includes completing that level's transition to L+1; level 1 is the starting state. Sum every intervening level, not only the displayed rows.
 

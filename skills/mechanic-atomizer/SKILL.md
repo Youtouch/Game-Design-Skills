@@ -17,7 +17,7 @@ Decompose a design into the smallest units that can be taught, tuned, and tested
 3. **Classify each atom:** player action, world rule, enemy/obstacle behaviour, or feedback/readability element.
 4. **Write the skill atom loop** for each player action: player action → system simulation → feedback → player's updated mental model. Note what the player must learn to master it.
 5. **List tunable parameters** for each atom: name, unit, plausible range, and which demands it changes: perception, inference, choice, execution, or recovery. Execution difficulty versus complexity is one useful distinction, not a complete model of challenge.
-6. **Map dependencies:** which atoms require another to be learned first (this feeds `mechanic-introduction-plan`).
+6. **Map dependencies:** separate actual rule/knowledge prerequisites from a convenient teaching order. Record coupled concepts that may be discovered together (this feeds `mechanic-introduction-plan`).
 7. **Flag issues:** atoms with no clear feedback, parameters that interact non-linearly, redundant atoms, atoms whose purpose is unclear. Lack of tuning space alone is not a defect: a unique dramatic action or expressive ritual can be valuable.
 
 ## Output
@@ -30,7 +30,7 @@ Followed by a dependency list and a short "issues" list. Keep ranges as design i
 
 ## Checks
 - Identify parameters and feedback where relevant; do not invent a parameter merely to fill the table. Check whether consequences are understandable enough for the intended experience.
-- No atom bundles two separate decisions.
+- Split decisions when useful for diagnosis or tuning; retain coupled decisions whose meaning would be lost, while recording separable demands.
 - Parameters are engine-agnostic (no component or variable names).
 
 ## Sources (paraphrased, not quoted)

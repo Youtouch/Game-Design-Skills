@@ -13,14 +13,14 @@ Plan opportunities to learn and transfer mechanics. A staged sequence is a usefu
 - Scope: one level, a world, or the full campaign.
 
 ## Process
-1. **Order mechanics** by dependency, then by importance to the core loop.
+1. **Separate prerequisites from preferred order.** Mark actual rule and knowledge requirements. Provide prior, contextual, discoverable, or supported learning opportunities. Coupled concepts can be learned together; do not invent an order merely to remove a pedagogic dependency cycle.
 2. **Consider these teaching functions**, combining or omitting beats when justified:
    - *Exposition*: shown in a safe space, low or no failure cost.
-   - *Validation*: player must use it once to progress; failure is cheap.
+   - *Validation*: a low-cost opportunity to apply it. Require use when a real prerequisite or intended experience justifies the gate; one success does not establish mastery or transfer.
    - *Challenge*: intensity raised through the difficulty matrix.
-   - *Combination*: paired with an already-mastered mechanic.
+   - *Combination*: related mechanics used together, with their assumed knowledge and learning opportunities made explicit.
 3. **Inspect new demands.** Isolating a demand can make diagnosis easier; simultaneous demands can be justified by context or intended discovery. State prerequisites, stakes, recovery, and what would reveal overload. Zero new demands can serve practice or ritual.
-4. **Pace intensity.** Alternate peaks with rest beats; after a new exposition, drop intensity of known mechanics.
+4. **Pace against intent.** Relief can free attention for learning; sustained pressure, ritual, and simultaneous discovery may serve another brief. Identify observations that would reveal unintended overload or disengagement.
 5. **Add reminders** for mechanics unused for a long stretch before challenging them again.
 6. **Check transfer evidence.** Trace alternate ways to complete a beat. Completion alone does not demonstrate the intended skill or later mastery. Use a fresh application when that knowledge is a real prerequisite; preserve valuable bypasses when open exploration is intended.
 

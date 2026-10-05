@@ -6,7 +6,7 @@
 # <Title>
 Hook (1 sentence):
 Player fantasy:
-Pillars (2-4):
+Pillars (usually 2–3 for a one-pager):
   1.
 Core loop (verb -> verb -> verb):
 Audience and platform:
@@ -27,7 +27,7 @@ Rules (table: condition | result):
 States and transitions:
 Signs and feedback (what tells the player what):
 Skills required / taught:
-Tuning knobs (name | start value | range | effect):
+Tuning knobs (name | start value | provisional range / validation status | effect):
 Edge cases:
 Dependencies:
 Open questions (question | owner):
@@ -41,7 +41,7 @@ Risks:
 Purpose and pillar link:
 Inputs / outputs:
 Rules and formulas:
-Parameters (name | unit | default | range):
+Parameters (name | unit | default | provisional range / validation status):
 Interactions with other systems:
 Failure modes and exploits:
 Telemetry to validate it:

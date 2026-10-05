@@ -10,6 +10,7 @@ Agent skills for a game designer and level designer AI companion.
 ## Layout
 
 - [Design critique](skills/design-critique/SKILL.md): research-informed critique for tracing rules and information, examining learning and participation, checking chance claims, and synthesizing design tradeoffs. Includes original lessons and source boundaries; effectiveness is not yet empirically validated.
+- [Spatial reasoning](skills/level-metrics-sheet/spatial-reasoning.md): worked lessons on directed routes, returns, landmarks, evidence order, nonlinear pacing, and intentional disorientation, used by the three level-design skills.
 
 - `skills/<name>/SKILL.md`: one folder per skill.
 - `AGENTS.md`: conventions for agents contributing to this repo.

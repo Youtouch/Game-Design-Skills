@@ -35,6 +35,10 @@ Martinez, Froehlich, and Fogarty, *Playing on Hard Mode: Accessibility, Difficul
 
 ## Why perspective synthesis remains provisional
 
+A bounded local comparison of the earlier and revised skills found no decisive correctness gain from the revision or from reflection/staged perspectives. It used three explicitly scaffolded tasks bundled into one execution per arm, with shared model lineage and no token/cost telemetry. Small wording-sensitive usefulness differences do not establish efficacy. Retain direct critique and optional perspectives; this result establishes neither general superiority nor universal lack of benefit.
+
 Du et al., ICML 2024 ([paper](https://proceedings.mlr.press/v235/du24e.html)), reports benefits of model debate on specified reasoning/factual benchmarks. Smit et al., ICML 2024 ([paper](https://proceedings.mlr.press/v235/smit24a.html)), reports cost and configuration limitations against stronger baselines. Selected main methods and results were reviewed; these were not game-design or learner studies. Neither proves creative validity or an optimal lens count.
 
 Saving first assessments, preserving source dependencies, and resolving disagreements by type are project proposals. Evaluate them against a strong direct critique and direct reflection, with actual costs recorded. If simpler reasoning works as well, simplify the workflow. Agreement between generated passes is never substitute player evidence.
+
+For the controlled tutorial study added in the second research pass, see [outcome interpretation](../playtest-plan-and-report/outcome-interpretation.md). It supports bounded comparisons of tutorial packages, not a mandatory teaching order or evidence that agent perspectives improve critique. For spatial teaching and firsthand route-design cases, see [spatial source notes](../level-metrics-sheet/spatial-sources.md).
