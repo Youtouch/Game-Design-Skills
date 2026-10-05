@@ -1,53 +1,39 @@
 ---
 name: design-critique
-description: Give a structured, prioritized critique of a game or level design (doc, pitch, mechanic, level layout, or playtest footage notes) against its pillars, player experience goals, MDA-style lenses, and Rational Game Design readability. Use when asked to review, critique, sanity-check, or find problems in a design.
+description: Give a prioritized critique of a game or level design against its intended experience, rules, player information, learning demands, and participation. Use to review a pitch, mechanic, layout, design document, or conflicting design recommendations. Design-only and engine-neutral.
 ---
 
 # Design Critique
 
-Critique the design against its own goals, not your taste. Every issue must cite the goal it threatens.
+Critique against the design's goals. Explain the mechanism behind a recommendation; a completed checklist is not a diagnosis. The perspective procedure here is a proposal, not an empirically validated quality improvement.
 
-## 1. Establish the yardstick
+## 1. Establish the decision
 
-- Extract the **pillars** and **player experience goals (PXGs)** from the material. If missing, infer them, state them as assumptions, and flag their absence as an issue.
-- Note the target audience and platform; they change what counts as a problem.
+Identify intended experience, audience, play context, revision, constraints, and pending decision. Separate rules and observations from goals and assumptions. If intent is missing, give useful conditional recommendations; do not invent a goal and then treat deviation from it as a defect.
 
-## 2. Run the lenses
+## 2. Trace the mechanism
 
-Work through each lens briefly; skip ones that do not apply and say so.
+For a narrow contradiction, trace it directly. For consequential tradeoffs, select distinct questions that could change the recommendation and use [perspective synthesis](perspectives.md): save initial assessments, compare evidence origins, and resolve conflicts by type. Staged passes are not independent reviews; no agent spawning is required.
 
-1. **Pillar fit**: does each element serve at least one pillar? Does anything contradict one?
-2. **MDA chain** (Mechanics -> Dynamics -> Aesthetics): from the rules, predict the dynamics players will actually produce, then the feelings those dynamics create. Flag gaps between predicted and intended aesthetics, and dominant strategies or degenerate loops.
-3. **Readability (RGD)**: can the player perceive the relevant signs, understand what they mean, and get clear feedback on their actions? Check for missing, ambiguous, or conflicting signs and delayed or absent feedback.
-4. **Skills and difficulty (RGD)**: which skills does it demand, are they taught before being tested, and do difficulty parameters ramp without spikes?
-5. **Motivation and loop**: is there a clear goal, meaningful choice, and reason to repeat?
-6. **Scope and risk**: cost versus value, unknowns that need a prototype.
+Choose supporting lessons as needed:
 
-For levels, add: navigation and landmarks, pacing (intensity curve), sightlines, and whether the space teaches its own mechanics.
+- [State, information, and experience](state-and-experience.md): progression gates, resources, hidden information, recovery, and causal experience hypotheses.
+- [Demands and observation](demands-and-observation.md): learning, asymmetry, access, creative variation, and choosing an informative prototype or playtest.
+- [Chance and progression](chance.md): random rewards, caps, dependence, and time to a threshold.
+- [Source boundaries](sources.md): edition-specific foundations, contrasting cases, and evidence limits. Read when citing support for the method.
 
-## 3. Report
+Candidate questions include agency, learning, information, incentives, emotion, pacing, social relationships, access, navigation, and evaluation feasibility. Select for this decision rather than requiring every lens. State consequential coverage gaps.
 
-Output in this order:
+Keep three claims distinct: a route exists under the rules; players can discover and perform it; it serves this audience's experience. Check decisive traces and arithmetic. Mark predicted dynamics and feelings as hypotheses, and inspect a plausible rival explanation. Do not invent missing transitions or observations.
 
-1. **Verdict** (2-3 lines): does it meet its goals, and what is the single biggest problem.
-2. **Issues**, sorted by priority:
+Recognize justified exceptions: mystery, ritual, unequal roles, alternate solutions, and intentional loss may serve the brief. Name the benefit, audience, cost, and observation that would reveal an unintended problem. Do not force difficulty ramps, equal activity, or instant readability on every game.
 
-| # | Severity | Lens | Issue | Goal threatened | Suggested direction |
-|---|---|---|---|---|---|
+## 3. Recommend and prioritize
 
-   Severity: **Blocker** (breaks a pillar or core loop), **Major** (undermines a PXG for many players), **Minor** (friction or polish).
-3. **Strengths** worth protecting (short list), so fixes do not remove them.
-4. **Questions** that only the designer or a playtest can answer.
+Lead with the strongest supported finding, what works, and what remains uncertain. Prioritize by consequence and support; do not invent affected-player counts. A concise issues table can include finding, goal affected, evidence/trace, uncertainty, and suggested direction.
 
-## Rules
+Explain what to preserve, what to change or leave conditional, and the tradeoff accepted. Retain consequential dissent and audience differences. Do not average lens scores or count generated votes as evidence. Offer directions rather than a full redesign unless requested.
 
-- Offer directions, not full redesigns, unless asked.
-- Separate what you observed in the material from what you predict; mark predictions.
-- Prefer one sharp issue over five vague ones. Cap the list at about ten; mention that more minor items exist if they do.
-- Recommend a playtest when the disagreement is about feel, not logic (see `playtest-plan-and-report`).
+End with the smallest useful check, what it could settle, and what would reverse the recommendation. See [playtest-plan-and-report](../playtest-plan-and-report/SKILL.md) when participant evidence is needed. A rule proof need not wait for a playtest; a simulation or reviewer consensus cannot establish enjoyment.
 
-## Sources
-
-- Robin Hunicke, Marc LeBlanc, Robert Zubek, "MDA: A Formal Approach to Game Design and Game Research" (2004).
-- Jesse Schell, *The Art of Game Design: A Book of Lenses* (lens-based questioning).
-- Rational Game Design and Rational Level Design material (readability, skills, difficulty parameters); see the project research file for links.
+Label synthetic examples and proposed studies. Attribute developer reports and observations to their origins and revision. Teach enough for the designer to understand why the recommendation follows.

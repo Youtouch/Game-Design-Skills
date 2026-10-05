@@ -16,9 +16,9 @@ Decompose a design into the smallest units that can be taught, tuned, and tested
 2. **Split into atomic mechanics.** An atom is one player verb or one world rule that cannot be split further without losing meaning (e.g. "jump" splits into "take off", "airborne control", "land"; stop when a part no longer has its own decision or input).
 3. **Classify each atom:** player action, world rule, enemy/obstacle behaviour, or feedback/readability element.
 4. **Write the skill atom loop** for each player action: player action → system simulation → feedback → player's updated mental model. Note what the player must learn to master it.
-5. **List tunable parameters** for each atom: name, unit, plausible range, and whether it changes *difficulty* (execution demand) or *complexity* (how much the player must understand).
+5. **List tunable parameters** for each atom: name, unit, plausible range, and which demands it changes: perception, inference, choice, execution, or recovery. Execution difficulty versus complexity is one useful distinction, not a complete model of challenge.
 6. **Map dependencies:** which atoms require another to be learned first (this feeds `mechanic-introduction-plan`).
-7. **Flag issues:** atoms with no clear feedback, parameters that interact non-linearly, redundant atoms, atoms with no meaningful tuning space.
+7. **Flag issues:** atoms with no clear feedback, parameters that interact non-linearly, redundant atoms, atoms whose purpose is unclear. Lack of tuning space alone is not a defect: a unique dramatic action or expressive ritual can be valuable.
 
 ## Output
 A markdown table per mechanic:
@@ -29,7 +29,7 @@ A markdown table per mechanic:
 Followed by a dependency list and a short "issues" list. Keep ranges as design intent, marked *estimate* until playtested.
 
 ## Checks
-- Every atom has at least one tunable parameter and one feedback channel.
+- Identify parameters and feedback where relevant; do not invent a parameter merely to fill the table. Check whether consequences are understandable enough for the intended experience.
 - No atom bundles two separate decisions.
 - Parameters are engine-agnostic (no component or variable names).
 
@@ -37,3 +37,5 @@ Followed by a dependency list and a short "issues" list. Keep ranges as design i
 - Chris McEntee, "Rational Design: The Core of Rayman Origins", Game Developer, 2012 (atomic mechanics, readability).
 - Sunder Iyer, "Rational Game Design in a Hurry", dev.to, 2021 (goal → mechanics → atomic parameters).
 - Daniel Cook, "The Chemistry of Game Design", Lostgarden, 2007 (skill atoms and feedback loops).
+
+Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.

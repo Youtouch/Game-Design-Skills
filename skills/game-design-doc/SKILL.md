@@ -20,7 +20,7 @@ If the request is ambiguous, default to the one-pager for new concepts and the f
 ## 2. Anchor before writing
 
 1. Confirm or draft **pillars**: 2-4 short, testable statements of what the game must feel like. A pillar that cannot reject a feature is too vague.
-2. Write **player experience goals (PXGs)** per feature: "The player should feel X when Y", observable in a playtest.
+2. Write **player experience goals (PXGs)** per feature: "The player should feel X when Y", followed by a proposed mechanism and observations or neutral questions that could support or weaken it. An emotion is not directly established by a behavior count.
 3. Every section of a spec traces back to a pillar or PXG. Flag sections that do not.
 
 ## 3. Write
@@ -43,11 +43,13 @@ Templates: [templates.md](templates.md).
 
 - Writing a bible nobody reads. Split by reader instead.
 - Pillars that are genres ("open world") rather than experiences.
-- Specifying feel with adjectives only. Add the observable behaviour that proves it.
+- Specifying feel with adjectives only. Add a causal hypothesis, plausible rival explanation, and observation that could distinguish them.
 - Mixing decided and undecided content without marking which is which.
 
 ## Sources
 
 - Tracy Fullerton, *Game Design Workshop*, chapters on formal elements and on communicating designs (documentation).
 - Jesse Schell, *The Art of Game Design: A Book of Lenses*, chapters on the experience and on the team/documents.
-- Rational Game Design framing (skills, signs and feedback, difficulty parameters) as described by Ubisoft-originated RGD material; see the project research file for links.
+- Rational Game Design framing (skills, signs and feedback, difficulty parameters); see [source boundaries](../design-critique/sources.md) for reviewed practitioner material and access limits.
+
+Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.

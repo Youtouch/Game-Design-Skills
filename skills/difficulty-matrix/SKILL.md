@@ -12,13 +12,13 @@ Turn atomic parameters into graded intensity levels so challenge can be dialled 
 - Target audience and intended difficulty curve, if known.
 
 ## Process
-1. **Pick difficulty parameters.** Keep only parameters that change execution demand (timing window, speed, distance, count, reaction time, precision). Move pure complexity parameters to a separate note.
+1. **Identify demands.** Separate perception, inference, choice, execution, and recovery. If the matrix models execution only, say so and keep the other demands visible; a wider timing window does not repair an unreadable cue.
 2. **Set the range** for each: easiest playable value, hardest fair value, unit. Mark values *estimate* until playtested.
-3. **Define intensity levels** (default 5: Trivial, Easy, Medium, Hard, Expert). Give each parameter a value per level.
-4. **Weight parameters** by how much each contributes to perceived difficulty (e.g. 1–3). Score a configuration as the weighted sum of its parameter levels.
-5. **Define safe combinations.** List which parameters may be raised together and caps on combined score; flag pairs that multiply difficulty (e.g. speed × small target) and must not both peak.
+3. **Define provisional levels** useful to this audience and decision. Five named bands are an optional convention, not a validated scale. Give each parameter a value per band.
+4. **Model combinations.** Prefer the parameter vector. If a weighted score helps compare drafts, disclose the chosen weights, units, and untested additive assumption; it is not measured perceived difficulty.
+5. **Inspect interactions.** Identify combinations that may amplify demands. Proposed caps are hypotheses until checked; do not assume a score proves safety or that two parameters can never peak together.
 6. **Define the sweet spot** per game phase: target score band for tutorial, mid-game, and late-game content.
-7. **Plan validation:** what playtest signal (fail rate, retries, time to clear) confirms each level, and how to adjust if it misses.
+7. **Plan validation:** which observations distinguish misunderstanding, execution difficulty, intended challenge, and participation barriers. Record audience, exposure, assists, and build; failure counts alone do not confirm perceived difficulty.
 
 ## Output
 
@@ -36,3 +36,5 @@ Then: combination rules (allowed / capped / forbidden), score bands per phase, a
 - Sunder Iyer, "Rational Game Design in a Hurry", dev.to, 2021 (difficulty matrix, sweet spot).
 - Luke McMillan, "The Rational Design Handbook: An Intro to RLD", Game Developer, 2013 (complexity vs difficulty, modifiers, playtest regression).
 - Chris McEntee, "Rational Design: The Core of Rayman Origins", Game Developer, 2012.
+
+Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.

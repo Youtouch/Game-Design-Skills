@@ -6,10 +6,12 @@
 Test name / date / build:
 Goal (pillar or PXG):
 Hypotheses:
-  H1:            Confirm if:            Refute if:
-Section in scope:            Known issues to ignore:
+  H1:            Support if:            Weaken if:            Rival explanation:
+Section in scope:            Known limitations and impact:
 Testers (profile x count):
-Protocol: think-aloud | silent    Help after: __ min stuck
+Prior exposure / access needs / accommodations:
+Protocol and rationale: think-aloud | silent/replay | facilitated
+Assistance rule and actual interventions:
 Tasks (goal phrasing):
   T1:
 Observation sheet columns: tester | time/location | behaviour | quote | hypothesis
@@ -27,7 +29,7 @@ P3 | 04:12 | room B | walked past the lever twice, said "is this a dead end?" | 
 
 ```
 Summary:
-Hypotheses: H1 confirmed/refuted/inconclusive - evidence
+Hypotheses: H1 supported/contradicted/unresolved in these conditions - evidence
 Findings (priority | finding | n/N | evidence | likely cause | direction):
 What worked:
 Next test should check:

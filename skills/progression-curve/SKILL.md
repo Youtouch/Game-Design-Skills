@@ -27,11 +27,11 @@ Cumulative XP `X(L) = Σ x(i)` for i < L. Polynomial approximation: `X(L) ≈ a�
 ## Procedure
 
 1. **Fix the targets first**, not the formula: e.g. level 5 in session 1 (30 min), level 20 by hour 10, cap 50 by hour 60.
-2. **Model income.** `xp_rate(L)` per minute. If income grows with level, the felt curve is `t(L) = x(L) / xp_rate(L)` — that is the curve to tune, not raw XP.
+2. **Model income.** `xp_rate(L)` per minute. With constant positive deterministic income within each level, `t(L) = x(L) / xp_rate(L)` estimates that level's duration. Random awards, carryover, caps, and changing activity require a state model. Duration is not a direct measure of felt pacing.
 3. **Solve parameters** so cumulative time hits each target. Use piecewise bands when one formula cannot hit all checkpoints.
 4. **Level table.** Columns: `L | x(L) | X(L) | xp_rate | minutes for this level | cumulative hours | unlock`.
-5. **Pacing checkpoints.** Place an unlock, new mechanic or reward every ~15–30 min early and every 1–2 h mid-game. Flag dead zones: stretches longer than 2x the median gap with no unlock.
-6. **Power vs challenge.** Plot player power `P(L)` against enemy/content difficulty `D(L)`. Ratio `P/D` near 1 = flow; drifting above means content goes trivial, below means walls. Name deliberate spikes (boss gates) vs accidental ones.
+5. **Pacing checkpoints.** Choose intervals from session context and intended experience; there is no universal unlock cadence. Long stretches may support mastery, ritual, or exploration. Explain the suspected cost and what observation could distinguish it from a valuable quiet interval.
+6. **Power vs challenge.** Plot player power `P(L)` against enemy/content difficulty `D(L)`. A ratio `P/D` is meaningful only if the model makes those quantities comparable; it cannot establish flow, boredom, or frustration. Examine ability, information, strategy, and access alongside numeric power. Name deliberate spikes (boss gates) vs accidental ones.
 7. **Catch-up and outliers.** Check a player who skips side content (lower income) and a power gamer (high income). Report time-to-cap spread.
 
 A worked example lives in [example.md](example.md).
@@ -40,7 +40,7 @@ A worked example lives in [example.md](example.md).
 
 - Tuning raw XP while income also scales: the felt curve can end up flat or inverted.
 - Exponential power growth with linear content makes all old content trivial; decide if that is intended.
-- Session-1 pacing matters most for retention; check minutes-to-first-3-levels explicitly.
+- Check early-session milestones when relevant to the brief; do not claim a retention effect without suitable evidence.
 - Rounding XP thresholds to "nice" numbers shifts cumulative time; recompute after rounding.
 
 ## Sources (paraphrased, not quoted)
@@ -48,3 +48,5 @@ A worked example lives in [example.md](example.md).
 - Ian Schreiber & Brenda Romero, *Game Balance* (2021), chapters on progression and curves.
 - Ernest Adams, *Fundamentals of Game Design*, chapter on progression and balance.
 - Raph Koster, *A Theory of Fun for Game Design*, on mastery pacing and boredom.
+
+Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.

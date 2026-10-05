@@ -9,7 +9,7 @@ Metrics are the measured rules of space: they make levels readable and let diffi
 
 ## Part A: derive the sheet
 
-Inputs: character height and width, walk/run/sprint speed, jump height and distance (standing and running), any traversal abilities (double jump, mantle, wall-run, dash), weapon effective ranges, camera type. If missing, assume a 1.8 m human third-person character and say so.
+Inputs: character height and width, walk/run/sprint speed, jump height and distance (standing and running), any traversal abilities (double jump, mantle, wall-run, dash), weapon effective ranges, camera type. If missing, keep values symbolic or mark a worked example as hypothetical; do not substitute a human character for an unspecified design.
 
 Derive and tabulate, each with a *comfortable*, *challenging* and *impossible* value:
 
@@ -42,10 +42,13 @@ Input: a written blockout (rooms, distances, gaps, cover, sightlines). For each 
 
 - Third-person cameras need more width and height than the character does.
 - Metrics change when abilities unlock; keep one column per ability stage if needed.
-- Playtest data overrides derived values; update the sheet, not individual levels (McMillan, *The Rational Design Handbook: Four Primary Metrics*).
+- Investigate disagreement between observed and derived values: model omissions, measurement error, build, ability stage, and participant context may differ. Update the relevant model or scoped target; an observation of confusion does not overturn a physical reachability proof.
 
 ## Sources (paraphrased, not quoted)
 
-- Luke McMillan, *The Metrics of Space: Molecule Design* and *Tactical Level Design*, Game Developer.
+- Nassib Azar, *The Metrics of Space: Molecule Design*, Game Developer.
+- Luke McMillan, *The Metrics of Space: Tactical Level Design*, Game Developer.
 - Luke McMillan, *The Rational Design Handbook: Four Primary Metrics*, Game Developer.
 - *Gameplay metrics: game design's best kept secret?*, intelligent-artifice.com, 2015.
+
+Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
