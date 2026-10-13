@@ -105,6 +105,10 @@ The two helpers are standard-library Python 3 scripts. Run them from their skill
 - `tests/`: unit tests for the helpers (`python -m unittest discover tests`).
 - `AGENTS.md`: conventions for agents contributing to this repo.
 
+## Protecting `main`
+
+[`.github/rulesets/protect-main.json`](.github/rulesets/protect-main.json) is a ruleset for the default branch. It requires changes to arrive by pull request with the `validate` check passing and review threads resolved, and blocks force-pushes and deletion. It requires no approvals, so a solo maintainer can still merge their own PRs. GitHub does not apply it from the file: import it under **Settings → Rules → Rulesets → New ruleset → Import a ruleset**, review, and save. Raise `required_approving_review_count` once there are other reviewers.
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
