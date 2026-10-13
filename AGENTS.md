@@ -19,7 +19,7 @@
 
 ## Examples and helpers
 
-- Each skill has a worked example (`example.md`) that shows the procedure producing a decision, not just a filled template. Label examples as synthetic and keep their numbers reproducible: recompute every figure before committing.
+- Each skill has a worked example (usually `example.md`; `economy-model` keeps its in `template.md`) that shows the procedure producing a decision, not just a filled template. Label examples as synthetic and keep their numbers reproducible: recompute every figure before committing.
 - Helper scripts are optional design calculators (balance, probability), standard-library Python 3 only, with unit tests in `tests/`. They are not engine or gameplay code.
 
 ## Checks before committing
