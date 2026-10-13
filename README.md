@@ -56,6 +56,7 @@ Every skill has a worked example. Examples are synthetic and labelled as such.
 | Skill | Use it to |
 |---|---|
 | [design-critique](skills/design-critique/SKILL.md) | give a prioritized critique against the design's goals, with optional [perspective synthesis](skills/design-critique/perspectives.md) |
+| [social-play-design](skills/social-play-design/SKILL.md) | design co-op, competitive, and asymmetric play around the intended relationship between players |
 | [accessibility-review](skills/accessibility-review/SKILL.md) | separate intended challenge from incidental barriers and propose options |
 | [playtest-plan-and-report](skills/playtest-plan-and-report/SKILL.md) | plan a playtest and turn notes into a findings report |
 
@@ -81,6 +82,7 @@ graph LR
   brief --> quest[quest-design]
   atom --> systems[systems-interaction-map]
   feedback --> access[accessibility-review]
+  loop --> social[social-play-design]
   beats --> test[playtest-plan-and-report]
   test --> critique[design-critique]
 ```

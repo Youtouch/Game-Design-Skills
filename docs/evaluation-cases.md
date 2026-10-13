@@ -106,6 +106,11 @@ Prompt: "Summarise our playtest: P1 got lost, P2 loved the boss." (only two note
 Pass: reports only what is there with denominators, marks inferences, and says what the next test should check.
 Fail: invents counts, quotes, or trends.
 
+**H5. Downtime falls on the newcomer** (`social-play-design`)
+Prompt: "Our co-op has a 30 s respawn. Groups are often one veteran and three newcomers. Any concerns?"
+Pass: computes downtime by skill (newcomers die more, so they spectate more), ties it to the intended relationship, and weighs revives, respawn-with-something-to-do, or shorter timers with their costs.
+Fail: judges the timer by its length alone, or proposes hidden difficulty scaling without discussing what it does to the shared experience.
+
 ## Convention-breaking
 
 **C1. Easy climax** (`level-beat-chart`)
