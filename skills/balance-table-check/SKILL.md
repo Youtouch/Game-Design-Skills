@@ -1,46 +1,51 @@
 ---
 name: balance-table-check
-description: Audit balance tables of units, items, weapons or abilities for dominant options, cost/benefit outliers and degenerate combinations. Use when reviewing a stat sheet, a card or item set, or a roster before playtest, or when one option is picked far more than intended.
+description: Audit balance tables of units, items, weapons, cards or abilities for dominated options, cost-curve outliers, intransitive gaps and degenerate combinations. Use when reviewing a stat sheet, card or item set, or roster before playtest, or when one option is picked far more than intended.
 ---
 
 # Balance Table Check
 
-Design audit of a stat table. Output: a findings list with evidence and a suggested lever per finding. No engine code.
+Design audit of a stat table. Output: a findings list with numeric evidence, a severity, and a suggested lever per finding. No engine code.
 
 ## Inputs
 
-- The table (CSV or markdown): one row per option, a `cost` column and numeric stat columns.
-- Context: which stats are "good when higher" vs "good when lower", the intended role of each option, and pick-rate data if any.
-
-Use the helper only after checking nonempty data, unique names, relevant numeric stats, finite values, and declared directions. Exclude categorical role columns from its input. Trim and validate `--lower` names against columns; require a finite nonnegative tolerance. The helper does not enforce these conditions. Its ratio branch needs separate review even with valid positive inputs: lower-is-better terms can cancel to a zero median and suppress reported deviations. Do not treat that output as a validated utility model.
+- The table (CSV or markdown): one row per option, a `name` column, a `cost` column, numeric stat columns, and optional label columns such as `role`.
+- For each stat, whether higher or lower is better. Ask rather than guess when it is ambiguous (a long cooldown is bad; a long stun duration may be good or bad depending on who suffers it).
+- The intended role of each option, pick or win data if any, and what the table omits (synergies, map, access, unlock order).
 
 ## Procedure
 
-1. **Normalise.** Convert stats to a common unit where possible DPS = damage / cooldown assumes positive cooldown and a relevant sustained-damage model. Effective HP = HP / (1 − reduction) assumes proportional fractional reduction in [0, 1); immunity is a separate case. State omitted effects.
-2. **Dominance (Pareto) check.** A table option dominates another when it is no worse on every modeled dimension (including lower cost) and strictly better on at least one, using each stat's preferred direction. This is table-relative: omitted range, access, synergies, or role can change the conclusion. [balance_check.py](balance_check.py) screens numeric CSVs; set `--lower` explicitly for lower-is-better stats.
-3. **Cost curve.** Fit `value = Σ w_i · stat_i` (weights from design intent or least squares against cost). Ratio `value / cost` per row; choose and justify a screening tolerance; ±15% is an optional default, not an established balance boundary. Report the weights so designers can dispute them. The helper uses equal mean-normalized weights, not the fitted model described here; its value/cost output is exploratory and can mislead with zero costs, signed stats, or near-zero medians. Calculate a suitable model separately when those occur.
-4. **Role coverage.** Compare within scoped roles or include role-relevant dimensions. A globally dominated row may omit its specialist function. Investigate missing opportunities against the brief; a deliberate disadvantage or collectible option need not be repaired.
-5. **Intransitive check.** For rock-paper-scissors systems, build the matchup matrix; each option should beat something and lose to something. A row with no losses is a candidate concern under the represented match conditions; availability, cost, draws, player skill, and strategic constraints can change its value.
-6. **Degenerate combinations.** List multiplicative interactions (damage × attack speed buffs, cost reduction + refund, cooldown reduction near 100%, stacking %). Compute the combined multiplier at max stacks; check intended caps, repeatability, resource limits, and time costs. A finite free option is different from repeatable uncapped gain; report the actual mechanism before calling it an exploit.
-7. **Edge values.** Check min/max levels, zero and cap values, and rounding at low numbers.
-8. **Report** using the template below.
+1. **Normalise.** Convert to comparable units where a model supports it, and state the model. DPS = damage / cooldown assumes positive cooldown and sustained fire. Effective HP = HP / (1 − reduction) assumes proportional reduction in [0, 1); immunity is a separate case. List effects the normalisation drops.
+2. **Screen with the helper.** [balance_check.py](balance_check.py) (standard library only) validates the table, skips label columns, and reports dominance and a cost curve:
+   `python balance_check.py table.csv --lower cooldown --group role`
+   Add `--weights damage=6,range=1,cooldown=-20` to price stats from design intent instead of a least-squares fit. Exit code 2 means the input is unusable; fix it rather than working around it.
+3. **Dominance.** An option dominates another when it is no worse on every modeled column (cost included) and strictly better on at least one. This is a proof within the represented columns only: an omitted range, access rule, or synergy can justify the dominated row.
+4. **Cost curve.** Value = Σ wᵢ · statᵢ, then compare each option's fair cost with its actual cost. A least-squares fit assumes most current costs are roughly right and can produce weights with the wrong sign when roles are mixed or stats correlate; the helper notes this. Report the weights so designers can dispute them. ±15% is a screening default, not a balance boundary.
+5. **Role coverage.** Re-run within roles (`--group`). A row that looks overpriced globally may be fairly priced for its specialist job. A deliberate weak or collectible option need not be repaired.
+6. **Intransitive check.** For rock-paper-scissors relations, build the matchup matrix. A row with no losses under the represented match conditions is a candidate concern; availability, cost, draws, and skill can change that.
+7. **Degenerate combinations.** List multiplicative interactions (damage × attack speed, cost reduction + refund, cooldown reduction near 100%, stacking percentages). Compute the multiplier at max stacks; check caps, repeatability, and resource or time limits. A one-time free option differs from repeatable uncapped gain.
+8. **Edge values.** Check minimum and maximum levels, zero and cap values, and rounding at small numbers.
+9. **Report** with the template below. Severity reflects consequence for the intended play, not the size of the number.
 
 ## Report template
 
 | # | finding | options | evidence (numbers) | severity | lever |
 |---|---|---|---|---|---|
-| 1 | Dominated | Short Bow | Long Bow ≥ on all stats at same cost | high | give Short Bow a niche (speed) |
+| 1 | Dominated | Short Bow | Long Bow ≥ on all modeled stats at the same cost | high | give Short Bow a niche (draw speed, ammo) |
+
+Worked example with the helper's output: [example.md](example.md) (table: [example.csv](example.csv)).
 
 ## Pitfalls
 
-- Conditional Pareto dominance can be proved within the represented dimensions. Its design significance remains context-dependent: map, synergies, availability, and skill can justify an apparent outlier. Do not auto-fix.
-- Linear value models miss synergy; pair step 3 with step 6.
-- Pick rates confound power with popularity and ease of use.
+- Do not auto-fix a dominated row. Map, synergy, availability, and player skill can justify an apparent outlier; ask what it is for.
+- A linear value model misses synergy; pair step 4 with step 7.
+- A fitted curve inherits the biases of current costs. Use design weights when the whole table is suspect.
+- Pick rates confound power with popularity, ease of use, and visibility.
 
 ## Sources (paraphrased, not quoted)
 
-- Ian Schreiber & Brenda Romero, *Game Balance* (2021), chapters on cost curves, transitive and intransitive balance.
+- Ian Schreiber & Brenda Romero, *Game Balance* (2021), chapters on cost curves and on transitive and intransitive balance.
 - Jesse Schell, *The Art of Game Design: A Book of Lenses*, chapter on balance.
 - David Sirlin, *Balancing Multiplayer Games* (sirlin.net article series), on viable options and dominant strategies.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md).
