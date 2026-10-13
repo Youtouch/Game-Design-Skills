@@ -8,6 +8,7 @@ Checks:
   and a nonempty `description` (at most 1024 characters)
 - every relative markdown link in the repo resolves to an existing file
 - README.md links to every skill
+- the game-design-companion router, if present, names every other skill
 
 Exit code 1 lists every problem found. Standard library only.
 """
@@ -91,6 +92,17 @@ def check_readme(root, names, problems):
             problems.append(f"README.md: no link to skills/{name}/")
 
 
+def check_router(root, names, problems):
+    path = os.path.join(root, "skills", "game-design-companion", "SKILL.md")
+    if not os.path.isfile(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    for name in names:
+        if name != "game-design-companion" and f"`{name}`" not in text:
+            problems.append(f"skills/game-design-companion/SKILL.md: router does not name `{name}`")
+
+
 def main(argv):
     root = os.path.abspath(argv[1] if len(argv) > 1 else
                            os.path.join(os.path.dirname(__file__), ".."))
@@ -98,6 +110,7 @@ def main(argv):
     names = check_skills(root, problems)
     check_links(root, problems)
     check_readme(root, names, problems)
+    check_router(root, names, problems)
     if problems:
         print("\n".join(problems))
         print(f"\n{len(problems)} problem(s)")

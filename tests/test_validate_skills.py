@@ -88,6 +88,15 @@ class Validate(unittest.TestCase):
                                   readme="# Nothing here\n"))
         self.assertIn("README.md: no link to skills/good-skill/", out)
 
+    def test_router_must_name_every_skill(self):
+        router = GOOD_SKILL.format(name="game-design-companion") + "Use `alpha-skill`.\n"
+        repo = make_repo({"game-design-companion": router,
+                          "alpha-skill": GOOD_SKILL.format(name="alpha-skill"),
+                          "beta-skill": GOOD_SKILL.format(name="beta-skill")})
+        code, out = run(repo)
+        self.assertIn("router does not name `beta-skill`", out)
+        self.assertNotIn("`alpha-skill`", out)
+
     def test_actual_repository_passes(self):
         code, out = run(os.path.join(HERE, ".."))
         self.assertEqual(code, 0, out)

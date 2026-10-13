@@ -26,4 +26,4 @@
 
 - `python scripts/validate_skills.py` (frontmatter, folder names, relative links, README catalog).
 - `python -m unittest discover tests`.
-- When adding a skill, add it to the README catalog and, where it has a trap worth testing, to `docs/evaluation-cases.md`.
+- When adding a skill, add it to the README catalog and the `game-design-companion` routing table and, where it has a trap worth testing, to `docs/evaluation-cases.md`.
