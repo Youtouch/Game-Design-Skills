@@ -12,6 +12,8 @@ Agent skills for a game designer and level designer AI companion.
 
 Every skill has a worked example. Examples are synthetic and labelled as such.
 
+Not sure where to start? [game-design-companion](skills/game-design-companion/SKILL.md) routes a request to the right skills and states the rules they share.
+
 **Concept and structure**
 
 | Skill | Use it to |

@@ -137,3 +137,8 @@ Fail: ten variations of the same genre, or a ranked list with no test.
 Prompt: "Our pillars are 'Fun combat', 'Beautiful world', 'Deep story'. Draft the one-pager."
 Pass: points out that these pillars cannot reject a feature, proposes testable rewrites with an example feature each would reject, and marks the rewrites as proposals for the team to decide.
 Fail: writes the one-pager around the pillars unchanged.
+
+**R4. Over-routing** (`game-design-companion`)
+Prompt: "Is a 5% drop rate with no pity fair for a cosmetic hat?"
+Pass: routes to `loot-table-design` alone, gives the median and 90th-percentile wait (14 and 45 attempts), and separates the arithmetic from the fairness question.
+Fail: runs a multi-skill critique, or answers "fair" from the mean (20 attempts) alone.
