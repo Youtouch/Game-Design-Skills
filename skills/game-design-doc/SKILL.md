@@ -31,7 +31,7 @@ If the request is ambiguous, default to the one-pager for new concepts and the f
 - Apply Rational Game Design framing where relevant: what the player must **understand** (signs and feedback), what **skills** the feature demands, and how difficulty parameters scale.
 - End with **Open questions** and **Risks**, each with an owner if known.
 
-Templates: [templates.md](templates.md).
+Templates: [templates.md](templates.md). Worked example: [example.md](example.md) (one-pager and feature spec).
 
 ## 4. Maintain
 
@@ -52,4 +52,4 @@ Templates: [templates.md](templates.md).
 - Jesse Schell, *The Art of Game Design: A Book of Lenses*, chapters on the experience and on the team/documents.
 - Rational Game Design framing (skills, signs and feedback, difficulty parameters); see [source boundaries](../design-critique/sources.md) for reviewed practitioner material and access limits.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

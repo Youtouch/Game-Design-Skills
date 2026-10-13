@@ -31,6 +31,8 @@ Plan opportunities to learn and transfer mechanics. A staged sequence is a usefu
 
 Follow with prerequisite risks, justified exceptions, and distinguishing observations. Do not label zero or multiple new demands an automatic violation.
 
+Worked example: [example.md](example.md) (sprout seed across four levels).
+
 ## Checks
 - Required knowledge has a plausible learning opportunity or is an explicit audience assumption.
 - Combined demands and failure costs fit the brief.
@@ -40,4 +42,4 @@ Follow with prerequisite risks, justified exceptions, and distinguishing observa
 - Chris McEntee, "Rational Design: The Core of Rayman Origins", Game Developer, 2012 (exposition, validation, challenge learning structure).
 - Luke McMillan, "The Rational Design Handbook: An Intro to RLD", Game Developer, 2013 (flow channel, pacing).
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

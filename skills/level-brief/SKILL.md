@@ -23,7 +23,7 @@ A level brief records intended experience, learning opportunities, constraints, 
 4. **Setting constraints.** Theme, landmarks, lighting/time of day, narrative beat, and hard limits (playtime, footprint, reused assets, streaming boundaries stated as design limits, not engine settings).
 5. **Spatial relationships and information.** When relevant, sketch directed connections, prerequisites, ability stages, one-way changes, and return/recovery paths. At meaningful choices record available cues and channels, expected inference, intentional uncertainty, confirmation/correction, and reverse-view cues. Trace required evidence in several permitted encounter orders. Use [spatial reasoning](../level-metrics-sheet/spatial-reasoning.md) for worked methods.
 6. **Metric references.** Point to the metrics sheet values the level relies on (jump distance, cover spacing, combat ranges). Never invent new metrics in the brief; flag gaps instead.
-7. **Success criteria.** Write a few *testable* statements, with audience, provisional target rationale, and how each is observed in a playtest Record representation, assistance, and prior exposure. Separate a rule trace from a comprehension or experience observation; an example percentage is not a universal target.
+7. **Success criteria.** Write a few *testable* statements, with audience, provisional target rationale, and how each is checked. Record representation, assistance, and prior exposure. Separate a rule trace from a comprehension or experience observation; an example percentage is not a universal target.
 8. **Risks and open questions.** List what could make the level fail (readability, difficulty spike, scope).
 
 ## Output template
@@ -52,6 +52,8 @@ A level brief records intended experience, learning opportunities, constraints, 
 - Each criterion has an appropriate check: rule trace, representative prototype, observation, or participant report. Do not claim one establishes the others.
 - No engine or implementation details.
 
+Worked example: [example.md](example.md) (level 2-2 of the sprout seed chain).
+
 Next steps: `level-beat-chart` for pacing, `level-metrics-sheet` for spatial checks.
 
 ## Sources (paraphrased, not quoted)
@@ -60,4 +62,4 @@ Next steps: `level-beat-chart` for pacing, `level-metrics-sheet` for spatial che
 - Luke McMillan, *The Rational Design Handbook: An Intro to RLD*, Game Developer, 2013.
 - Sunder Iyer, *Rational Game Design in a Hurry*, dev.to, 2021.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

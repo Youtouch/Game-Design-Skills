@@ -1,0 +1,9 @@
+name,role,cost,damage,range,cooldown
+Short Bow,ranged,100,10,20,1.0
+Long Bow,ranged,100,12,25,1.0
+Crossbow,ranged,160,30,22,2.5
+Sling,ranged,40,5,12,0.8
+Dagger,melee,60,8,1,0.5
+Sword,melee,120,14,1.5,0.8
+Halberd,melee,180,24,3,1.6
+Hammer,melee,180,18,1.5,1.6

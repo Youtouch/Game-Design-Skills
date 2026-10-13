@@ -35,6 +35,8 @@ Recommend a repair or justified preservation against the brief. Include who bene
 
 When observations conflict with a derived result, inspect model omissions, measurement error, build, ability stage, and participant context. Confusion alone does not overturn a correct conditional feasibility proof. A changed rule requires a new trace; an old observation does not validate the repair.
 
+Worked example: [example.md](example.md) (a run-up condition makes a gap infeasible; a visible-from-where check).
+
 ## Sources
 
 Reviewed foundations and their limits are in [spatial source notes](spatial-sources.md). For broader experience diagnosis, see [demands and observation](../design-critique/demands-and-observation.md).

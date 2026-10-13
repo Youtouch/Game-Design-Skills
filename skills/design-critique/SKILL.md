@@ -36,4 +36,6 @@ Explain what to preserve, what to change or leave conditional, and the tradeoff 
 
 End with the smallest useful check, what it could settle, and what would reverse the recommendation. See [playtest-plan-and-report](../playtest-plan-and-report/SKILL.md) when participant evidence is needed. A rule proof need not wait for a playtest; a simulation or reviewer consensus cannot establish enjoyment.
 
+Worked example: [example.md](example.md) (a two-player heist room: rule trace, role perspectives, a preserved convention break).
+
 Label synthetic examples and proposed studies. Attribute developer reports and observations to their origins and revision. Teach enough for the designer to understand why the recommendation follows.

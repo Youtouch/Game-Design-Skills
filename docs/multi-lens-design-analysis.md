@@ -68,4 +68,6 @@ Test whether the method improves diagnosis and recommendations on unfamiliar des
 
 Compare a direct critique with staged multi-lens analysis under documented conditions. Assess correctness, applicability, evidence use, recognition of tradeoffs, creative usefulness, uncertainty and cost. Do not reward verbosity, lens count or artificial unanimity.
 
+Concrete trap-based prompts for these comparisons are in [evaluation cases](evaluation-cases.md); they have not yet been run.
+
 An acceptable synthesis may preserve disagreement or conclude that more evidence is needed. The objective is a useful and revisable design judgment, not an appearance of certainty.

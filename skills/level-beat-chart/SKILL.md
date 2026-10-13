@@ -47,6 +47,8 @@ For branching or revisited content, add:
 
 End with the consequential tradeoffs and next checks, not an automatic list of fixes. A three-minute beach or low-demand finale does not fail because its score stays flat.
 
+Worked example: [example.md](example.md) (two valve orders through one level).
+
 ## Sources
 
 [Spatial source notes](../level-metrics-sheet/spatial-sources.md) distinguish practitioner accounts from our procedures. [Demands and observation](../design-critique/demands-and-observation.md) explains how to test the resulting hypotheses. No fixed beat count, additive intensity scale, or optimal pacing curve is established by those sources.
