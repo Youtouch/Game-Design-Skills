@@ -21,6 +21,7 @@ Not sure where to start? [game-design-companion](skills/game-design-companion/SK
 | [concept-ideation](skills/concept-ideation/SKILL.md) | generate varied concepts from a brief, then narrow by riskiest assumption and cheapest test |
 | [core-loop-analysis](skills/core-loop-analysis/SKILL.md) | map loops by timescale and one-time arcs; find broken or disconnected loops |
 | [design-teardown](skills/design-teardown/SKILL.md) | analyse a reference game and extract principles with their supporting conditions |
+| [prototype-plan](skills/prototype-plan/SKILL.md) | pick the riskiest question, the cheapest fidelity that can answer it, and pass/fail criteria before building |
 | [game-design-doc](skills/game-design-doc/SKILL.md) | write one-pagers, feature specs, and system specs anchored on pillars |
 
 **Mechanics and Rational Game Design** (one example mechanic, the sprout seed, runs through these)
@@ -67,6 +68,7 @@ Not sure where to start? [game-design-companion](skills/game-design-companion/SK
 ```mermaid
 graph LR
   idea[concept-ideation] --> gdd[game-design-doc]
+  idea --> proto[prototype-plan]
   teardown[design-teardown] --> idea
   gdd --> loop[core-loop-analysis]
   loop --> atom[mechanic-atomizer]

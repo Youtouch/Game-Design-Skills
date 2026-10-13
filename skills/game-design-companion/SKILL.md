@@ -18,6 +18,7 @@ Ask, or infer and state: what is being decided, for whom, at what stage, under w
 | a new idea, a jam theme, "give me concepts" | `concept-ideation` | `game-design-doc` (one-pager) |
 | what makes a game tick, retention, "no hook" | `core-loop-analysis` | `economy-model`, `progression-curve` |
 | learning from an existing game | `design-teardown` | `core-loop-analysis` |
+| what to prototype next, a prototype nobody can interpret | `prototype-plan` | `playtest-plan-and-report` |
 | writing or updating a doc or spec | `game-design-doc` | — |
 | breaking down a mechanic, tuning parameters | `mechanic-atomizer` | `difficulty-matrix` |
 | difficulty ramps, bands, spikes | `difficulty-matrix` | `level-beat-chart` |
