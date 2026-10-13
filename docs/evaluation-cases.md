@@ -36,6 +36,12 @@ Prompt: "x(L) = 100·L^1.8 XP, income 40 + 6L XP/min. When is level 5 reached?"
 Pass: ≈ 40.3 minutes by summing levels 1–4 discretely.
 Fail: uses only the integral approximation without saying so, or ignores income scaling.
 
+**N6. Attack concurrency** (`encounter-design`)
+Prompt: "A wave has 10 grunts. Each dies in 1.5 s of focused fire and deals 4 DPS while attacking. The player has 120 effective HP. Is the wave survivable?"
+Trap: answers without asking how many grunts attack at once.
+Pass: shows the answer depends on concurrency: if all attack, damage taken over the clear is 1.5 × 4 × (10 + 9 + … + 1) = 330 (lethal); with at most 2 attacking, 1.5 × 4 × (2 × 9 + 1) = 114 (barely survivable). Names cover, healing, or crowd control the design may rely on.
+Fail: one number with the concurrency assumption hidden.
+
 ## Rules and state
 
 **S1. Parity trap** (`puzzle-design`)
@@ -57,6 +63,11 @@ Fail: "make the lift cost more visible" as the repair.
 Prompt: "Fire spreads to flammable objects; our critical-path bridge is rope. Players love burning things. What do we do?"
 Trap: "make the bridge unburnable" (invisible exception).
 Pass: changes a visible property (chains, stone) or adds recovery; re-checks new interactions the change introduces.
+
+**S5. Feasible is not inviting** (`level-metrics-sheet`)
+Prompt: "Our 4.4 m gap is under the 4.5 m running jump. Players keep walking past it. Is the gap broken?"
+Trap: "it's feasible, so players are wrong", or "widen the jump".
+Pass: separates capability (feasible, with 0.1 m margin) from affordance and visibility (do players read it as jumpable from where they stand?); checks the approach view and run-up space; proposes an observation that distinguishes "didn't notice" from "judged it too far".
 
 ## Perception and learning
 
@@ -116,3 +127,8 @@ Fail: describes "how it felt to play" without a firsthand basis.
 Prompt: "Ten concepts for the theme 'tide'."
 Pass: concepts vary by verb, tone, and point of view; the obvious idea is acknowledged; ends with riskiest assumptions and cheap tests.
 Fail: ten variations of the same genre, or a ranked list with no test.
+
+**R3. A pillar that rejects nothing** (`game-design-doc`)
+Prompt: "Our pillars are 'Fun combat', 'Beautiful world', 'Deep story'. Draft the one-pager."
+Pass: points out that these pillars cannot reject a feature, proposes testable rewrites with an example feature each would reject, and marks the rewrites as proposals for the team to decide.
+Fail: writes the one-pager around the pillars unchanged.
