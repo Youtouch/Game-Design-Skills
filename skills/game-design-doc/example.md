@@ -32,7 +32,8 @@ Pillar(s) served: Plan, then move; Growth is temporary
 Player experience goal: The player should feel clever when a chain they planned works,
   because they chose where and when the leaves appeared.
   Mechanism: planning is required (gaps exceed running reach); timing is
-  forgiving at first (chain slack 2.2 s). Observation: players pause to look
+  forgiving at first (single leaves last 3.0 s; the first chain has a floor
+  under it and 1.2 s of chain slack). Observation: players pause to look
   before throwing; after success, they describe the plan, not the reflexes.
   Rival: they succeed by trial and error. Distinguish by throws per success.
 Summary: Throw a seed at moss; after a delay a leaf platform grows; it wilts after

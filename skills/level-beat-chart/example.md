@@ -30,6 +30,7 @@ Both valve orders are allowed (see the brief's order trace).
 | Abrupt demand | VB raises execution from 2 to 3 and adds a respawn. On the B-first route nothing softens the step from H1. | Preserve both orders, but add a 7.5 m practice gap with a floor in the corridor before VB, so either route sees a middle step. | B-first players retry VB about as often as A-first players: then the extra gap is unnecessary padding. |
 | Learning gap | none: the single leaf was validated in 2-1; the water rule needs no execution. | — | players throw at submerged moss after VA, which would mean the water rule is not read. |
 | Ending fit | W is easy on purpose; the drain is the payoff. | Preserve. | players describe the end as "nothing happened". |
+| Duration | Beat estimates plus transit sum to about 205–418 s (3.4–7.0 min), below the brief's 6–9 min production estimate. | Flag to the brief's owner: either the estimate is high or the level lacks a beat. Do not pad with travel. | first-visit timings land within 6–9 min once retries are counted. |
 | Route variation | Water rule meaning changes by order (exploration first vs. after the peak). Both are coherent. | Preserve. | — |
 
 ## What the chart does not claim
