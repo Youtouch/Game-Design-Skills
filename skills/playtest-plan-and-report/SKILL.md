@@ -18,7 +18,7 @@ A playtest addresses a decision or exploratory question. Use hypotheses when spe
 7. **Questions**: a short post-session interview. Open questions first ("What were you trying to do there?"), ratings last. Avoid leading questions.
 8. **Protocol**: choose think-aloud for mental-model questions when suitable; consider uninterrupted play and retrospective questions for timing, comedy, or tension. Declare assistance rules, preserve facilitation that belongs to normal play, and record interventions, prior exposure, and accommodations.
 
-Template: [templates.md](templates.md). For interpreting measured outcomes and randomized comparisons, read [outcome interpretation](outcome-interpretation.md).
+Template: [templates.md](templates.md). Worked example: [example.md](example.md) (plan, synthetic notes, report). For interpreting measured outcomes and randomized comparisons, read [outcome interpretation](outcome-interpretation.md).
 
 ## Mode B: Report
 

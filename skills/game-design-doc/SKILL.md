@@ -31,7 +31,7 @@ If the request is ambiguous, default to the one-pager for new concepts and the f
 - Apply Rational Game Design framing where relevant: what the player must **understand** (signs and feedback), what **skills** the feature demands, and how difficulty parameters scale.
 - End with **Open questions** and **Risks**, each with an owner if known.
 
-Templates: [templates.md](templates.md).
+Templates: [templates.md](templates.md). Worked example: [example.md](example.md) (one-pager and feature spec).
 
 ## 4. Maintain
 
