@@ -23,10 +23,12 @@ Decompose a design into the smallest units that can be taught, tuned, and tested
 ## Output
 A markdown table per mechanic:
 
-| Atom | Type | Skill learned | Parameter | Unit | Range | Difficulty / Complexity | Depends on |
+| Atom | Type | Skill learned | Parameter | Unit | Range | Demand changed | Depends on |
 |---|---|---|---|---|---|---|---|
 
 Followed by a dependency list and a short "issues" list. Keep ranges as design intent, marked *estimate* until playtested.
+
+Worked example: [example.md](example.md) (sprout seed; the start of a chain continued in the difficulty-matrix, introduction-plan, level-brief, and beat-chart examples).
 
 ## Checks
 - Identify parameters and feedback where relevant; do not invent a parameter merely to fill the table. Check whether consequences are understandable enough for the intended experience.
@@ -38,4 +40,4 @@ Followed by a dependency list and a short "issues" list. Keep ranges as design i
 - Sunder Iyer, "Rational Game Design in a Hurry", dev.to, 2021 (goal → mechanics → atomic parameters).
 - Daniel Cook, "The Chemistry of Game Design", Lostgarden, 2007 (skill atoms and feedback loops).
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

@@ -51,4 +51,4 @@ Report structure:
 - Steve Krug, *Rocket Surgery Made Easy* (small-sample usability testing, think-aloud protocol).
 - Celia Hodent, *The Gamer's Brain*, chapters on usability and playtesting.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

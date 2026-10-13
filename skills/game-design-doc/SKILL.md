@@ -52,4 +52,4 @@ Templates: [templates.md](templates.md).
 - Jesse Schell, *The Art of Game Design: A Book of Lenses*, chapters on the experience and on the team/documents.
 - Rational Game Design framing (skills, signs and feedback, difficulty parameters); see [source boundaries](../design-critique/sources.md) for reviewed practitioner material and access limits.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.

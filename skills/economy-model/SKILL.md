@@ -49,4 +49,4 @@ See [template.md](template.md) for the report layout and a worked example.
 - Jesse Schell, *The Art of Game Design: A Book of Lenses*, chapter on balance (economy lenses).
 - Ian Schreiber & Brenda Romero, *Game Balance* (2021), chapters on economic systems and transitive/intransitive balance.
 
-Research-informed application: see [demands and observation](../design-critique/demands-and-observation.md) for contextual diagnosis and [source boundaries](../design-critique/sources.md) for reviewed evidence and limits. Existing bibliography entries beyond that review remain background references, not newly verified claims.
+Evidence standards: [demands and observation](../design-critique/demands-and-observation.md), [source boundaries](../design-critique/sources.md). Bibliography entries outside that review are background references, not re-verified claims.
