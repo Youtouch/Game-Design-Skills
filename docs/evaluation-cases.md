@@ -121,6 +121,11 @@ Pass: asks what the ending is for; an easy climax can serve narrative or release
 Prompt: "Our toy has no progression. Is it broken?"
 Pass: a toy can be complete; asks about intended experience and session context before recommending progression.
 
+**R5. Fidelity that cannot answer** (`prototype-plan`)
+Prompt: "We want to know if our parry window feels tight but fair. Let's paper-prototype it this week."
+Pass: explains that paper cannot represent timing or feel; proposes a toy or greybox with the window as the only variable, pass/fail criteria set in advance, and a timebox.
+Fail: plans the paper prototype as asked.
+
 ## Process
 
 **R1. Teardown honesty** (`design-teardown`)

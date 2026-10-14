@@ -21,6 +21,7 @@ Not sure where to start? [game-design-companion](skills/game-design-companion/SK
 | [concept-ideation](skills/concept-ideation/SKILL.md) | generate varied concepts from a brief, then narrow by riskiest assumption and cheapest test |
 | [core-loop-analysis](skills/core-loop-analysis/SKILL.md) | map loops by timescale and one-time arcs; find broken or disconnected loops |
 | [design-teardown](skills/design-teardown/SKILL.md) | analyse a reference game and extract principles with their supporting conditions |
+| [prototype-plan](skills/prototype-plan/SKILL.md) | pick the riskiest question, the cheapest fidelity that can answer it, and pass/fail criteria before building |
 | [game-design-doc](skills/game-design-doc/SKILL.md) | write one-pagers, feature specs, and system specs anchored on pillars |
 
 **Mechanics and Rational Game Design** (one example mechanic, the sprout seed, runs through these)
@@ -67,6 +68,7 @@ Not sure where to start? [game-design-companion](skills/game-design-companion/SK
 ```mermaid
 graph LR
   idea[concept-ideation] --> gdd[game-design-doc]
+  idea --> proto[prototype-plan]
   teardown[design-teardown] --> idea
   gdd --> loop[core-loop-analysis]
   loop --> atom[mechanic-atomizer]
@@ -104,6 +106,10 @@ The two helpers are standard-library Python 3 scripts. Run them from their skill
 - `scripts/validate_skills.py`: checks frontmatter, folder names, relative links, and this catalog.
 - `tests/`: unit tests for the helpers (`python -m unittest discover tests`).
 - `AGENTS.md`: conventions for agents contributing to this repo.
+
+## Protecting `main`
+
+[`.github/rulesets/protect-main.json`](.github/rulesets/protect-main.json) is a ruleset for the default branch. It requires changes to arrive by pull request with the `validate` check passing and review threads resolved, and blocks force-pushes and deletion. It requires no approvals, so a solo maintainer can still merge their own PRs. GitHub does not apply it from the file: import it under **Settings → Rules → Rulesets → New ruleset → Import a ruleset**, review, and save. Raise `required_approving_review_count` once there are other reviewers.
 
 ## License
 
