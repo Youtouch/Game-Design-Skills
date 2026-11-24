@@ -1,6 +1,6 @@
 ---
 name: puzzle-design
-description: Design or review puzzles and puzzle chains: define the rules the player must know, prove solvability, check for unintended solutions and soft-locks, map dependencies across a level, and write a hint ladder. Use for logic, environmental, physics or adventure-game puzzles, when a puzzle is "too obscure" or "trial and error", or when planning a puzzle level.
+description: "Design or review puzzles and puzzle chains: define the rules the player must know, prove solvability, check for unintended solutions and soft-locks, map dependencies across a level, and write a hint ladder. Use for logic, environmental, physics or adventure-game puzzles, when a puzzle is \"too obscure\" or \"trial and error\", or when planning a puzzle level."
 ---
 
 # Puzzle Design

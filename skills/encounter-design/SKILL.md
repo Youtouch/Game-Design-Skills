@@ -1,6 +1,6 @@
 ---
 name: encounter-design
-description: Design or review a combat encounter: enemy roles and composition, arena layout and footholds, wave timing, threat readability, and a pressure check against the player's survivability and damage output. Use when building a fight, tuning a difficulty spike in combat, or reviewing an arena blockout.
+description: "Design or review a combat encounter: enemy roles and composition, arena layout and footholds, wave timing, threat readability, and a pressure check against the player's survivability and damage output. Use when building a fight, tuning a difficulty spike in combat, or reviewing an arena blockout."
 ---
 
 # Encounter Design
